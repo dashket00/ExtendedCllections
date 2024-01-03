@@ -16,12 +16,12 @@ public class Pairs {
 
     public static void main(String[] args) {
         String[] arr1 = {"code", "bug"};
-        System.out.println(pairs(arr1)); // Output: {"b": "g", "c": "e"}
+        System.out.println(pairs(arr1));
 
         String[] arr2 = {"man", "moon", "main"};
-        System.out.println(pairs(arr2)); // Output: {"m": "n"}
+        System.out.println(pairs(arr2));
 
         String[] arr3 = {"man", "moon", "good", "night"};
-        System.out.println(pairs(arr3)); // Output: {"g": "d", "m": "n", "n": "t"}
+        System.out.println(pairs(arr3));
     }
 }

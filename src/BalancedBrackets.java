@@ -14,19 +14,19 @@ public class BalancedBrackets {
             } else if (ch == '}' && !stack.isEmpty() && stack.peek() == '{') {
                 stack.pop();
             } else {
-                return false; // Несбалансированная скобка
+                return false;
             }
         }
 
-        return stack.isEmpty(); // Стек должен быть пустым для сбалансированной строки
+        return stack.isEmpty();
     }
 
     public static void main(String[] args) {
-        System.out.println(isBalanced("()")); // Output: true
-        System.out.println(isBalanced("[()]")); // Output: true
-        System.out.println(isBalanced("{[()]}")); // Output: true
-        System.out.println(isBalanced("([{{[(())]}}])")); // Output: true
-        System.out.println(isBalanced("{{[]()}}}}")); // Output: false
-        System.out.println(isBalanced("{[(])}")); // Output: false
+        System.out.println(isBalanced("()"));
+        System.out.println(isBalanced("[()]"));
+        System.out.println(isBalanced("{[()]}"));
+        System.out.println(isBalanced("([{{[(())]}}])"));
+        System.out.println(isBalanced("{{[]()}}}}"));
+        System.out.println(isBalanced("{[(])}"));
     }
 }
